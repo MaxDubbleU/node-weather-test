@@ -12,8 +12,19 @@ line 25: Here we are just requesting our url's contents, which are in JSON, so w
 
 As mentioned in the comments I'm going to most likely create a front end for this as well once I finish the other exercises. I followed for the most part some simple documentation on OpenWeatherMap,
 as well as some guides on youtube just to check and make sure I was on the right track
+
 -----
+
 For the file reader, I wanted to just get down the basic version of getting the file reader up and running, much like the weather test before tinkering around on the front end. What tripped me up for a couple minutes making this was getting the fs.readFileSync to actually read the correct path. I never had the issue of it searching within the project directory when doing similar challenges like this in Java for school, so it was interesting reading on stack overflow on why this happens. As a fix, I installed the path module. Ideally if this were to scale up and be useful in an actual application, I would probably build out a front end and then connect to a database that can store and display these files, either like a blog post of some sorts or as a library of free txt files for textbooks, dictionaries, etc.
 
 -----
+
 For exercise 3, I created a database using MongoDB, and created the collection within the code itself in user-schema.js. This one in particular caused a lot of trouble in the setup as I learned quickly I didn't have the MongoDB server installed as well as some other dependencies, so with the help of stack overflow and some youtube guides I was able to get past some common issues that can happen when setting it all up. Similar to the previous two exercises, I used yargs and allowed for a user to pass in the database information through the console(this info just being what was given for the json data in the google doc), and then used the setup in user-schema.js to actually create this inside the database. In a real world situation, usually there would be a front end for the user to input this data into, and instead of yargs we would just be taking in the data they input on the page. I would also probably add in options to update or delete this information as well if the website required it. 
+
+-----
+
+For exercise 4, all that needed to happen was creating a new function called fetchFromMongoDB, which would just search for an entry in the database by using userSchema.find, and a user could input from the console(For something like a public directory you'd have a search function built out for the front end). I also created a separate variable called input, which would hold the specific index of argv since it gave me some errors when just doing args._[0]  
+
+-----
+
+Now I'm going to work on a page for the weather app, and finish up the questions on the google doc.
