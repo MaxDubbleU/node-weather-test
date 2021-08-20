@@ -10,7 +10,7 @@ line 20: So here I'm just using back ticks to allow me to include the json data 
 
 line 25: Here we are just requesting our url's contents, which are in JSON, so we can just parse through that to make the data appear neater in the console and log it so it displays. In the event we get an error on our url it would show up.
 
-As mentioned in the comments I'm going to most likely create a front end for this as well once I finish the other exercises. I followed for the most part some simple documentation on OpenWeatherMap,
+ I followed for the most part some simple documentation on OpenWeatherMap,
 as well as some guides on youtube just to check and make sure I was on the right track
 
 -----
@@ -27,4 +27,3 @@ For exercise 4, all that needed to happen was creating a new function called fet
 
 -----
 
-Now I'm going to work on a page for the weather app, and finish up the questions on the google doc.
